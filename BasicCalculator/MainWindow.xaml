@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BasicCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="400">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Background="LightGray" Margin="5" Padding="10, 15" Text="" FontSize="30" VerticalAlignment="Center"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70*"/>
+                <ColumnDefinition Width="30*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
+                <Button Name="btn_1"  Grid.Row="0" Grid.Column="0" Margin="5" Content="1" FontSize="30" Click="btn_1_Click"/>
+                <Button Name="btn_2" Grid.Row="0" Grid.Column="1" Margin="5" Content="2" FontSize="30" Click="btn_2_Click"/>
+                <Button Name="btn_3" Grid.Row="0" Grid.Column="2" Margin="5" Content="3" FontSize="30" Click="btn_3_Click"/>
+                <Button Name="btn_4" Grid.Row="1" Grid.Column="0" Margin="5" Content="4" FontSize="30" Click="btn_4_Click"/>
+                <Button Name="btn_5" Grid.Row="1" Grid.Column="1" Margin="5" Content="5" FontSize="30" Click="btn_5_Click"/>
+                <Button Name="btn_6" Grid.Row="1" Grid.Column="2" Margin="5" Content="6" FontSize="30" Click="btn_6_Click"/>
+                <Button Name="btn_7" Grid.Row="2" Grid.Column="0" Margin="5" Content="7" FontSize="30" Click="btn_7_Click"/>
+                <Button Name="btn_8" Grid.Row="2" Grid.Column="1" Margin="5" Content="8" FontSize="30" Click="btn_8_Click"/>
+                <Button Name="btn_9" Grid.Row="2" Grid.Column="2" Margin="5" Content="9" FontSize="30" Click="btn_9_Click"/>
+                <Button Name="btn_pm" Grid.Row="3" Grid.Column="0" Margin="5" Content="+/-" FontSize="30" Click="btn_pm_Click"/>
+                <Button Name="btn_0" Grid.Row="3" Grid.Column="1" Margin="5" Content="0" FontSize="30" Click="btn_0_Click"/>
+                <Button Name="btn_dot" Grid.Row="3" Grid.Column="2" Margin="5" Content="." FontSize="30" Click="btn_dot_Click"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Button Name="btn_plus" Grid.Row="0" Margin="5" Content="+" FontSize="30" Click="btn_plus_Click"/>
+                <Button Name="btn_minus" Grid.Row="1" Margin="5" Content="-" FontSize="30" Click="btn_minus_Click"/>
+                <Button Name="btn_prod" Grid.Row="2" Margin="5" Content="*" FontSize="30" Click="btn_prod_Click"/>
+                <Button Name="btn_div" Grid.Row="3" Margin="5" Content="/" FontSize="30" Click="btn_div_Click"/>
+                <Button Name="btn_res" Grid.Row="4" Margin="5" Content="=" FontSize="30" Click="btn_res_Click"/>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
